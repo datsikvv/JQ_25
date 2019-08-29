@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 900px;
+            height: 900px;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cell {
+            width: 90px;
+            height: 90px;
+        }
+        .green {
+            background-color: green;
+        }
+        .red {
+            background-color: red;
+        }
+      
+
+    </style>
+</head>
+<body>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>   
+<script>
+    'use strict'
+    const container = $('<div class="container"> </div> ');
+    const cellRed = $('<div class="cell red"> </div> ');
+    const cellGreen = $('<div class="cell green"> </div> ');
+
+
+    for (let i = 0; i < 100; i++) {
+        if (i%2) {
+            container.append(cellRed.clone());
+
+        } else {
+            container.append(cellGreen.clone());
+        }
+    }
+
+
+    $("body").append(container)
+
+</script>
+
+</body>
+</html>

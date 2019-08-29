@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* .container {
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            display: none;
+            justify-content: center;
+        }
+        .btn {
+            width: 80px;
+            height: 80px;
+            border: 2px solid gray;
+            margin: 5px;
+        }
+        .one {
+            background-color: red;
+        }
+        .two {
+            background-color: green;
+        }
+        .three {
+            background-color: yellow;
+        }
+        .fourth {
+            background-color: greenyellow;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .close-btn {
+            width: 80px;
+            height: 80px;
+            border: 2px solid gray;
+            margin: 5px;
+        } */
+        div {
+            width: 100px;
+            height: 200px;
+            overflow: auto;
+        }
+      
+
+            </style>
+</head>
+<body>
+    <!-- <div class="my-html">
+        123
+    </div> -->
+
+<!-- <ul>
+    <li class="first">1</li>
+    <li><div class="my-html">
+            <p>123</p>
+        </div></li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+
+</ul>
+
+<button class="my-btn">
+    Click me
+</button>    -->
+
+<!-- <button class="main-btn"> <img src="https://svgsilh.com/svg/35679.svg" alt="">   </button> -->
+
+<!--
+     <div class="container"> 
+    <div class="btn one"></div>
+    <div class="btn two"></div>
+    <div class="btn three"></div>
+    <div class="btn fourth"></div>
+    <button class="close-btn"> <img src="https://image.flaticon.com/icons/png/512/17/17047.png" alt="">   </button>
+
+</div>
+ -->
+
+
+<!-- <p>text-1 </p>
+<p>text-2 </p>
+<p>text-3 </p> -->
+
+<div >
+        <button class="my-btn"> Click me </button>
+
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>    <p class="link">Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+    <p>Hello world! </p>
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>   
+<script>
+    'use strict'
+    // const myContainer = $('.my-html')
+    // const content = "<p> <span> Hello world!!</span> </p>";
+    // myContainer.html(content);
+    // console.dir(myContainer[0]);
+    // console.log(myContainer.text());
+
+    // $("li").each(function(index, element) {  // цикл . перебираем все элементы
+    // //  console.log(index);
+    // //  console.log(element);
+    // console.log($(this))
+    // })
+
+
+        // Не работает  с ес6 функцией
+
+    // $("li").each( (index, element) => {    
+    // //  console.log(index);
+    // //  console.log(element);
+    // console.log($(this))
+    // })
+
+        
+        
+
+    // $("li").each(function(index, element) {
+    // // console.log($(this).is(".first"));  // возвращает булиевое значение если 
+    // console.log($(this).has("div"));    // возвращает набор элементов где есть совпадение 
+    // })
+
+    // Метод Клон
+    // const content = $(".first").clone();
+
+    // content.on('click', (e) => {
+    //     console.log($(e.target).text());
+    // });
+    // $('ul').append(content);
+    // $("content").appendTo("ul");   // // вставляем в конец клон элемента
+
+    // $(".first").appendTo("ul"); // перемешаем указанный элемент
+
+
+ //$("ul").after($(".first"));
+//  $("ul").before($(".first"));
+
+// $("li").addClass('test'); // добавить класс
+// // $("li").removeClass('test');  // удалить класс
+// setTimeout(() => {
+//     $("li").removeClass('test');  // удалить класс
+
+// }, 5000);
+
+// console.log($("li").hasClass('first'));
+
+// $(".my-btn").on('click', () => {
+//     $(".my-btn").toogleClass("active");
+// })
+
+
+
+//   Добавление попапа
+
+// $("body").append("<button class='main-btn'> <img src='https://svgsilh.com/svg/35679.svg'>   </button>");
+
+// const modalContainer = $('<div class="container"> </div> ');
+// const close = $("<button class='main-btn'> <img src='https://svgsilh.com/svg/35679.svg'>   </button>");
+// const fourthBtn = $("<div class='btn fourth'></div>");
+// const threeBtn = $('<div class="btn three"></div>');
+// const twoBtn = $('<div class="btn two"></div>');
+// const oneBtn = $('<div class="btn one"></div>');
+
+// modalContainer.append(close);
+// // modalContainer.append(fourthBtn);
+// // modalContainer.append(threeBtn);
+// // modalContainer.append(twoBtn);
+// // modalContainer.append(oneBtn);
+
+// $("body").append(modalContainer);
+
+// // modalContainer.append("<button class='main-btn'> <img src='https://svgsilh.com/svg/35679.svg'>   </button>")
+
+
+// const mainBtn = $(".main-btn");
+// const container = $(".container");
+// const closeBtn = $(".close-btn");
+// const btn = $(".btn")
+// const one = $(".one");
+// const two = $(".two");
+// const three = $(".three");
+// const fourth = $(".fourth");
+
+// mainBtn.on('click', (event)=> {
+//     $(mainBtn).css(
+//   "display", "none"
+// );
+//     container.css(
+//   "display", "flex"
+// );
+// });
+
+// closeBtn.on('click', (event)=> {
+//  container.css(
+//   "display", "none"
+// );
+
+// $(mainBtn).css(
+//   "display", "block"
+// );
+// });
+
+// btn.on('click', (event)=> {
+//  let color = $(event.target).css("background-color");
+//  console.log(color)
+//  container.css(
+//   "background-color", color
+// );
+
+// });
+
+
+// $("p").wrap("<div></div>");
+
+// $("p").each(.wrap("<div></div>").parent().addClass($("p").text()));
+
+
+// console.log($("p").text());
+
+
+
+// $("p").each(function(index, element) {
+//     $(element).wrap(`<div class="${$(element).text()} "></div>`)
+//     })
+
+// console.log($("p").parent());
+
+// $("p").unwrap();
+
+
+console.log($(".link").offset())
+console.log($(".link").position())
+
+
+
+
+
+$(".my-btn").on("click", () => {
+    $("div").scrollTop(1001);
+})
+
+
+
+$("div").on("scroll", (event) => {
+    if ($(event.target).scrollTop() > 1000 ) {
+        $(event.target).scrollTop(0)
+    }
+    console.log($(event.target).scrollTop())
+})
+
+
+</script>
+
+</body>
+</html>
